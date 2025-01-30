@@ -6,14 +6,20 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Introspector {
+
+    private static final Logger logger = LoggerFactory.getLogger(Introspector.class);
 
     public static void main(String[] args) throws IOException {
         if (args.length != 1) {
@@ -65,22 +71,23 @@ public class Introspector {
         root.set("classes", classesArray);
         mapper.writerWithDefaultPrettyPrinter().writeValue(new File("project_analysis.json"), root);
     }
+
     private static List<CompilationUnit> parseJavaFiles(String projectPath) throws IOException {
         List<CompilationUnit> compilationUnits = new ArrayList<>();
         JavaParser javaParser = new JavaParser();
-        Files.walk(Paths.get(projectPath))
-                .filter(Files::isRegularFile)
-                .filter(path -> path.toString().endsWith(".java"))
-                .forEach(path -> {
-                    try {
-                        CompilationUnit cu = javaParser.parse(path).getResult().orElse(null);
-                        if (cu != null) {
-                            compilationUnits.add(cu);
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                });
+        try (Stream<Path> paths = Files.walk(Paths.get(projectPath))) {
+            paths.filter(Files::isRegularFile)
+                 .filter(path -> path.toString().endsWith(".java"))
+                 .forEach(path -> {
+                     try {
+                         javaParser.parse(path).getResult().ifPresent(compilationUnits::add);
+                     } catch (IOException e) {
+                         logger.error("Error parsing file: {}", path, e);
+                     }
+                 });
+        } catch (IOException e) {
+            logger.error("Error walking through project path: {}", projectPath, e);
+        }
         return compilationUnits;
     }
 }
