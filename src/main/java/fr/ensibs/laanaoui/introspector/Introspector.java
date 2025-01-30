@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.nodeTypes.NodeWithName;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,6 +38,10 @@ public class Introspector {
             cu.findAll(ClassOrInterfaceDeclaration.class).forEach(clazz -> {
                 ObjectNode classNode = mapper.createObjectNode();
                 classNode.put("name", clazz.getNameAsString());
+                classNode.put("package", cu.getPackageDeclaration().map(NodeWithName::getNameAsString).orElse(""));
+                classNode.put("type", clazz.isInterface() ? "interface" : "class");
+                String modifiers = clazz.getModifiers().toString().replace("[", "").replace("]", "");
+                classNode.put("modifiers", modifiers);
 
                 ArrayNode fieldsArray = mapper.createArrayNode();
                 clazz.getFields().forEach(field -> {
