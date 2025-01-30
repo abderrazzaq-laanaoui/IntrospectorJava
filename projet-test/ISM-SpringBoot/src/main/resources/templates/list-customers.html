@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Inventory Management System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<!--
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" th:href="@{'/'}">Accueil</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{'/products/list'}">Produits</a></li>
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{'/'}">Commandes</a></li>
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{'/CRM/list'}">Clients</a></li>
+			</ul>
+		</div>
+	</nav>
+	-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+	 id="mainNav">
+	<div class="container">
+		<a class="navbar-brand js-scroll-trigger"
+		   th:href="@{'/orderController/load/'}">Create Order</a>
+		<button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+				class="navbar-toggler" data-target="#navbarResponsive"
+				data-toggle="collapse" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" th:href="@{'/'}">ACCUEIL</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" th:href="@{'/CRM/list'}">CLIENTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" th:href="@{'/products/list'}">PRODUITS</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid pt-5">
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="card card-primary">
+				<div class="card-heading">
+					<h3  class="text-center text-uppercase p-3">
+						<i class="fa fa-product-hunt"></i> Ajouter Un Client
+					</h3>
+				</div>
+				<div class="card-body">
+					<form action="#" th:action="@{/CRM/saveCustomer}"
+						  th:object="${customer}" method="POST" class="text-center">
+						<!-- Add hidden form field to handle update -->
+						<input type="hidden" th:field="*{id}" />
+						<input type="text" placeholder="Prenom"
+							th:field="*{firstName}" class="form-control mb-4">
+						<input type="text" th:field="*{lastName}"
+							 class="form-control mb-4" placeholder="Nom">
+						<input type="text" th:field="*{email}"placeholder="Email"
+							 class="form-control mb-4" >
+						<button type="submit" class="btn btn-info text-center pl-5 pr-5">Save</button>
+					</form>
+
+				</div>
+				<div class="panel-footer"></div>
+			</div>
+		</div>
+
+
+	<div class="col-lg-8">
+		<div class="header ">
+			<h3 class="text-uppercase">Liste Des Clients</h3>
+			<hr>
+
+			<table class="table table-bordered table-striped table-responsive-md table-responsive-sm">
+				<thead class="thead-dark">
+				<tr>
+					<th>Prenom</th>
+					<th>Nom</th>
+					<th>Email</th>
+					<th>Action</th>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr th:each="tempCustomer : ${customers}">
+
+					<td th:text="${tempCustomer.firstName}" />
+					<td th:text="${tempCustomer.lastName}" />
+					<td th:text="${tempCustomer.email}" />
+
+					<td>
+						<!-- Add "update" button/link --> <a
+							th:href="@{/CRM/showFormForUpdate(customerId=${tempCustomer.id})}"
+							class="btn btn-info btn-sm"> Modifier </a> <!-- Add "delete" button/link -->
+						<a th:href="@{/CRM/delete(customerId=${tempCustomer.id})}"
+						   class="btn btn-danger btn-sm"
+						   onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">
+							Supprimer </a>
+
+					</td>
+
+
+				</tr>
+				</tbody>
+			</table>
+
+
+		</div>
+	</div>
+
+
+</div>
+</div>
+
+
+
+</body>
+</html>

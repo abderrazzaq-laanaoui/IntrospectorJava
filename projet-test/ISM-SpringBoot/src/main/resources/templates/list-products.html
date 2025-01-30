@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Management System</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<!--
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" th:href="@{'/'}">HOME</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{'/products/list'}">Insert Product</a></li>
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{'/'}">Order History</a></li>
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{'/CRM/list'}">CRM</a></li>
+			</ul>
+		</div>
+	</nav>
+-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+     id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger"
+           th:href="@{'/orderController/load/'}">Create Order</a>
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarResponsive"
+                data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" th:href="@{'/'}">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" th:href="@{'/CRM/list'}">CLIENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" th:href="@{'/products/list'}">PRODUITS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid pt-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card card-primary">
+                <div class="card-heading">
+                    <h3 class="text-center text-uppercase p-3">
+                        <i class="fa fa-product-hunt"></i> AJOUTER UN PRODUIT
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <form action="#" class="text-center"
+                          method="POST" th:action="@{/products/saveProduct}" th:object="${product}">
+                        <input th:field="*{productId}" type="hidden"/>
+                        <input class="form-control mb-4 " placeholder="Nom De Produit" th:field="*{name}"
+                               type="text">
+                        <input class="form-control mb-4 "
+                               placeholder="UGS" th:field="*{sku}"
+                               th:value="*{sku}" type="text">
+                        <input class="form-control mb-4" placeholder="Couleur"
+                               th:field="*{color}" type="text">
+                        <input class="form-control mb-4 " placeholder="Prix" th:field="*{price}"
+                               th:value="*{price}" type="text">
+                        <input class="form-control mb-4 " placeholder="Quantité" th:field="*{qty}"
+                               th:value="*{qty}" type="text">
+
+                        <button class="btn btn-info text-center pl-5 pr-5" type="submit">Save</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="header col-lg-8">
+            <h3 class="text-uppercase">Product Directory</h3>
+            <hr>
+
+            <table class="table table-bordered table-striped table-responsive-md table-responsive-sm">
+                <thead class="thead-dark">
+                <tr>
+                    <th>Nom de Produit</th>
+                    <th>UGS</th>
+                    <th>Couleur</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr th:each="tempProduct : ${products}">
+
+                    <td th:text="${tempProduct.name}"/>
+                    <td th:text="${tempProduct.sku}"/>
+                    <td th:text="${tempProduct.color}"/>
+                    <td th:text="${tempProduct.price}"/>
+                    <td th:text="${tempProduct.qty}"/>
+                    <td>
+                        <!-- Add "update" button/link --> <a
+                            class="btn btn-info btn-sm"
+                            th:href="@{/products/showFormForUpdate(productId=${tempProduct.productId})}"> Modifier </a> <!-- Add "delete" button/link -->
+                        <a class="btn btn-danger btn-sm"
+                           onclick="if (!(confirm('Are you sure you want to delete this product?'))) return false"
+                           th:href="@{/products/delete(productId=${tempProduct.productId})}">
+                            Supprimer
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
