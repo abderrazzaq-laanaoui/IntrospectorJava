@@ -8,6 +8,7 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -72,7 +73,7 @@ public class Introspector {
         mapper.writerWithDefaultPrettyPrinter().writeValue(new File("project_analysis.json"), root);
     }
 
-    private static List<CompilationUnit> parseJavaFiles(String projectPath) throws IOException {
+    private static List<CompilationUnit> parseJavaFiles(String projectPath) {
         List<CompilationUnit> compilationUnits = new ArrayList<>();
         JavaParser javaParser = new JavaParser();
         try (Stream<Path> paths = Files.walk(Paths.get(projectPath))) {
