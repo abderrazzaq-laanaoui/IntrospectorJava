@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.body.TypeDeclaration;
 import com.github.javaparser.ast.nodeTypes.NodeWithName;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,9 +34,14 @@ public class Introspector {
         List<CompilationUnit> compilationUnits = parseJavaFiles(projectPath);
         ObjectMapper mapper = new ObjectMapper();
         ArrayNode classesArray = mapper.createArrayNode();
+        ArrayNode relationsArray = mapper.createArrayNode();
 
         for (CompilationUnit cu : compilationUnits) {
             cu.findAll(ClassOrInterfaceDeclaration.class).forEach(clazz -> {
+                if ("MavenWrapperDownloader".equals(clazz.getNameAsString())) {
+                    return; // Skip MavenWrapperDownloader class
+                }
+
                 ObjectNode classNode = mapper.createObjectNode();
                 classNode.put("name", clazz.getNameAsString());
                 classNode.put("package", cu.getPackageDeclaration().map(NodeWithName::getNameAsString).orElse(""));
@@ -70,11 +76,39 @@ public class Introspector {
                 classNode.set("methods", methodsArray);
 
                 classesArray.add(classNode);
+
+                // Add relations
+                clazz.getExtendedTypes().forEach(extendedType -> {
+                    ObjectNode relationNode = mapper.createObjectNode();
+                    relationNode.put("source", clazz.getNameAsString());
+                    relationNode.put("target", extendedType.getNameAsString());
+                    relationNode.put("type", "extends");
+                    relationsArray.add(relationNode);
+                });
+
+                clazz.getImplementedTypes().forEach(implementedType -> {
+                    ObjectNode relationNode = mapper.createObjectNode();
+                    relationNode.put("source", clazz.getNameAsString());
+                    relationNode.put("target", implementedType.getNameAsString());
+                    relationNode.put("type", "implements");
+                    relationsArray.add(relationNode);
+                });
+
+                clazz.getMethods().forEach(method -> {
+                    method.getParameters().forEach(param -> {
+                        ObjectNode relationNode = mapper.createObjectNode();
+                        relationNode.put("source", clazz.getNameAsString());
+                        relationNode.put("target", param.getTypeAsString());
+                        relationNode.put("type", "uses");
+                        relationsArray.add(relationNode);
+                    });
+                });
             });
         }
 
         ObjectNode root = mapper.createObjectNode();
         root.set("classes", classesArray);
+        root.set("relations", relationsArray);
         mapper.writerWithDefaultPrettyPrinter().writeValue(new File("project_analysis.json"), root);
     }
 
