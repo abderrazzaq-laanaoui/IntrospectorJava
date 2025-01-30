@@ -1,0 +1,2713 @@
+{
+  "classes" : [ {
+    "name" : "ProductDTO",
+    "package" : "com.projetjee.gc.dto",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "productId",
+      "type" : "int"
+    }, {
+      "name" : "name",
+      "type" : "String"
+    }, {
+      "name" : "sku",
+      "type" : "Integer"
+    }, {
+      "name" : "color",
+      "type" : "String"
+    }, {
+      "name" : "price",
+      "type" : "Integer"
+    }, {
+      "name" : "qty",
+      "type" : "Integer"
+    } ],
+    "methods" : [ {
+      "name" : "getQty",
+      "parameters" : [ ]
+    }, {
+      "name" : "setQty",
+      "parameters" : [ {
+        "name" : "qty",
+        "type" : "Integer"
+      } ]
+    }, {
+      "name" : "getProductId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setProductId",
+      "parameters" : [ {
+        "name" : "productId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setName",
+      "parameters" : [ {
+        "name" : "name",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getSku",
+      "parameters" : [ ]
+    }, {
+      "name" : "setSku",
+      "parameters" : [ {
+        "name" : "sku",
+        "type" : "Integer"
+      } ]
+    }, {
+      "name" : "getColor",
+      "parameters" : [ ]
+    }, {
+      "name" : "setColor",
+      "parameters" : [ {
+        "name" : "color",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getPrice",
+      "parameters" : [ ]
+    }, {
+      "name" : "setPrice",
+      "parameters" : [ {
+        "name" : "price",
+        "type" : "Integer"
+      } ]
+    } ]
+  }, {
+    "name" : "EmployeeDTO",
+    "package" : "com.projetjee.gc.dto",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "id",
+      "type" : "int"
+    }, {
+      "name" : "firstName",
+      "type" : "String"
+    }, {
+      "name" : "lastName",
+      "type" : "String"
+    }, {
+      "name" : "email",
+      "type" : "String"
+    } ],
+    "methods" : [ {
+      "name" : "getId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setId",
+      "parameters" : [ {
+        "name" : "id",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getFirstName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setFirstName",
+      "parameters" : [ {
+        "name" : "firstName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getLastName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setLastName",
+      "parameters" : [ {
+        "name" : "lastName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getEmail",
+      "parameters" : [ ]
+    }, {
+      "name" : "setEmail",
+      "parameters" : [ {
+        "name" : "email",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "CustomerDTO",
+    "package" : "com.projetjee.gc.dto",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "id",
+      "type" : "int"
+    }, {
+      "name" : "firstName",
+      "type" : "String"
+    }, {
+      "name" : "lastName",
+      "type" : "String"
+    }, {
+      "name" : "email",
+      "type" : "String"
+    }, {
+      "name" : "fullName",
+      "type" : "String"
+    }, {
+      "name" : "orderHeader",
+      "type" : "List<OrderHeaderDTO>"
+    } ],
+    "methods" : [ {
+      "name" : "getId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setId",
+      "parameters" : [ {
+        "name" : "id",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getFirstName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setFirstName",
+      "parameters" : [ {
+        "name" : "firstName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getLastName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setLastName",
+      "parameters" : [ {
+        "name" : "lastName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getEmail",
+      "parameters" : [ ]
+    }, {
+      "name" : "setEmail",
+      "parameters" : [ {
+        "name" : "email",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getFullName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setFullName",
+      "parameters" : [ {
+        "name" : "fullName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderHeader",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderHeader",
+      "parameters" : [ {
+        "name" : "orderHeader",
+        "type" : "List<OrderHeaderDTO>"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderLineDTO",
+    "package" : "com.projetjee.gc.dto",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "orderLineId",
+      "type" : "int"
+    }, {
+      "name" : "lineNumber",
+      "type" : "String"
+    }, {
+      "name" : "product",
+      "type" : "ProductDTO"
+    }, {
+      "name" : "quantity",
+      "type" : "int"
+    }, {
+      "name" : "total",
+      "type" : "int"
+    }, {
+      "name" : "itemName",
+      "type" : "String"
+    }, {
+      "name" : "price",
+      "type" : "int"
+    }, {
+      "name" : "finalTotal",
+      "type" : "int"
+    } ],
+    "methods" : [ {
+      "name" : "getProduct",
+      "parameters" : [ ]
+    }, {
+      "name" : "setProduct",
+      "parameters" : [ {
+        "name" : "product",
+        "type" : "ProductDTO"
+      } ]
+    }, {
+      "name" : "getOrderLineId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderLineId",
+      "parameters" : [ {
+        "name" : "orderLineId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getLineNumber",
+      "parameters" : [ ]
+    }, {
+      "name" : "setLineNumber",
+      "parameters" : [ {
+        "name" : "lineNumber",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getQuantity",
+      "parameters" : [ ]
+    }, {
+      "name" : "setQuantity",
+      "parameters" : [ {
+        "name" : "orderPackQuantity",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getItemName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setItemName",
+      "parameters" : [ {
+        "name" : "itemName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getTotal",
+      "parameters" : [ ]
+    }, {
+      "name" : "setTotal",
+      "parameters" : [ {
+        "name" : "total",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getPrice",
+      "parameters" : [ ]
+    }, {
+      "name" : "setPrice",
+      "parameters" : [ {
+        "name" : "price",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getFinalTotal",
+      "parameters" : [ ]
+    }, {
+      "name" : "setFinalTotal",
+      "parameters" : [ {
+        "name" : "finalTotal",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderHeaderDTO",
+    "package" : "com.projetjee.gc.dto",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "orderHeaderId",
+      "type" : "int"
+    }, {
+      "name" : "number",
+      "type" : "String"
+    }, {
+      "name" : "type",
+      "type" : "String"
+    }, {
+      "name" : "orderDate",
+      "type" : "String"
+    }, {
+      "name" : "orderStatus",
+      "type" : "String"
+    }, {
+      "name" : "customer",
+      "type" : "CustomerDTO"
+    }, {
+      "name" : "orderLine",
+      "type" : "OrderLineDTO[]"
+    }, {
+      "name" : "newOrderLine",
+      "type" : "OrderLineDTO"
+    }, {
+      "name" : "finalTotal",
+      "type" : "int"
+    } ],
+    "methods" : [ {
+      "name" : "getOrderHeaderId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderHeaderId",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getNumber",
+      "parameters" : [ ]
+    }, {
+      "name" : "setNumber",
+      "parameters" : [ {
+        "name" : "number",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getType",
+      "parameters" : [ ]
+    }, {
+      "name" : "setType",
+      "parameters" : [ {
+        "name" : "type",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderDate",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderDate",
+      "parameters" : [ {
+        "name" : "orderDate",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderStatus",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderStatus",
+      "parameters" : [ {
+        "name" : "orderStatus",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ ]
+    }, {
+      "name" : "setCustomer",
+      "parameters" : [ {
+        "name" : "customer",
+        "type" : "CustomerDTO"
+      } ]
+    }, {
+      "name" : "getOrderLine",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderLine",
+      "parameters" : [ {
+        "name" : "orderLine",
+        "type" : "OrderLineDTO[]"
+      } ]
+    }, {
+      "name" : "getNewOrderLine",
+      "parameters" : [ ]
+    }, {
+      "name" : "setNewOrderLine",
+      "parameters" : [ {
+        "name" : "newOrderLine",
+        "type" : "OrderLineDTO"
+      } ]
+    }, {
+      "name" : "getFinalTotal",
+      "parameters" : [ ]
+    }, {
+      "name" : "setFinalTotal",
+      "parameters" : [ {
+        "name" : "finalTotal",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderLine",
+    "package" : "com.projetjee.gc.entity",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "orderLineId",
+      "type" : "int"
+    }, {
+      "name" : "product",
+      "type" : "Product"
+    }, {
+      "name" : "quantity",
+      "type" : "int"
+    }, {
+      "name" : "price",
+      "type" : "int"
+    }, {
+      "name" : "total",
+      "type" : "int"
+    }, {
+      "name" : "orderHeader",
+      "type" : "OrderHeader"
+    } ],
+    "methods" : [ {
+      "name" : "getOrderLineId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderLineId",
+      "parameters" : [ {
+        "name" : "orderLineId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getProduct",
+      "parameters" : [ ]
+    }, {
+      "name" : "setProduct",
+      "parameters" : [ {
+        "name" : "product",
+        "type" : "Product"
+      } ]
+    }, {
+      "name" : "getQuantity",
+      "parameters" : [ ]
+    }, {
+      "name" : "setQuantity",
+      "parameters" : [ {
+        "name" : "quantity",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getOrderHeader",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderHeader",
+      "parameters" : [ {
+        "name" : "orderHeader",
+        "type" : "OrderHeader"
+      } ]
+    }, {
+      "name" : "getTotal",
+      "parameters" : [ ]
+    }, {
+      "name" : "setTotal",
+      "parameters" : [ {
+        "name" : "total",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getPrice",
+      "parameters" : [ ]
+    }, {
+      "name" : "setPrice",
+      "parameters" : [ {
+        "name" : "price",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "Product",
+    "package" : "com.projetjee.gc.entity",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "productId",
+      "type" : "int"
+    }, {
+      "name" : "name",
+      "type" : "String"
+    }, {
+      "name" : "sku",
+      "type" : "int"
+    }, {
+      "name" : "color",
+      "type" : "String"
+    }, {
+      "name" : "price",
+      "type" : "int"
+    }, {
+      "name" : "qty",
+      "type" : "int"
+    } ],
+    "methods" : [ {
+      "name" : "getProductId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setProductId",
+      "parameters" : [ {
+        "name" : "productId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setName",
+      "parameters" : [ {
+        "name" : "name",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getSku",
+      "parameters" : [ ]
+    }, {
+      "name" : "setSku",
+      "parameters" : [ {
+        "name" : "sku",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getColor",
+      "parameters" : [ ]
+    }, {
+      "name" : "setColor",
+      "parameters" : [ {
+        "name" : "color",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getPrice",
+      "parameters" : [ ]
+    }, {
+      "name" : "setPrice",
+      "parameters" : [ {
+        "name" : "price",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getQty",
+      "parameters" : [ ]
+    }, {
+      "name" : "setQty",
+      "parameters" : [ {
+        "name" : "qty",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "Customer",
+    "package" : "com.projetjee.gc.entity",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "id",
+      "type" : "int"
+    }, {
+      "name" : "firstName",
+      "type" : "String"
+    }, {
+      "name" : "lastName",
+      "type" : "String"
+    }, {
+      "name" : "email",
+      "type" : "String"
+    }, {
+      "name" : "orderHeader",
+      "type" : "List<OrderHeader>"
+    } ],
+    "methods" : [ {
+      "name" : "getId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setId",
+      "parameters" : [ {
+        "name" : "id",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getFirstName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setFirstName",
+      "parameters" : [ {
+        "name" : "firstName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getLastName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setLastName",
+      "parameters" : [ {
+        "name" : "lastName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getEmail",
+      "parameters" : [ ]
+    }, {
+      "name" : "setEmail",
+      "parameters" : [ {
+        "name" : "email",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "toString",
+      "parameters" : [ ]
+    } ]
+  }, {
+    "name" : "OrderHeader",
+    "package" : "com.projetjee.gc.entity",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "orderHeaderId",
+      "type" : "int"
+    }, {
+      "name" : "number",
+      "type" : "String"
+    }, {
+      "name" : "type",
+      "type" : "String"
+    }, {
+      "name" : "orderDate",
+      "type" : "Date"
+    }, {
+      "name" : "orderStatus",
+      "type" : "String"
+    }, {
+      "name" : "customer",
+      "type" : "Customer"
+    }, {
+      "name" : "orderLines",
+      "type" : "List<OrderLine>"
+    }, {
+      "name" : "finalTotal",
+      "type" : "Integer"
+    } ],
+    "methods" : [ {
+      "name" : "getOrderHeaderId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderHeaderId",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getNumber",
+      "parameters" : [ ]
+    }, {
+      "name" : "setNumber",
+      "parameters" : [ {
+        "name" : "number",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getType",
+      "parameters" : [ ]
+    }, {
+      "name" : "setType",
+      "parameters" : [ {
+        "name" : "type",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderDate",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderDate",
+      "parameters" : [ {
+        "name" : "orderDate",
+        "type" : "Date"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ ]
+    }, {
+      "name" : "setCustomer",
+      "parameters" : [ {
+        "name" : "customer",
+        "type" : "Customer"
+      } ]
+    }, {
+      "name" : "getOrderLines",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderLines",
+      "parameters" : [ {
+        "name" : "orderLines",
+        "type" : "List<OrderLine>"
+      } ]
+    }, {
+      "name" : "getOrderStatus",
+      "parameters" : [ ]
+    }, {
+      "name" : "setOrderStatus",
+      "parameters" : [ {
+        "name" : "orderStatus",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "setFinalTotal",
+      "parameters" : [ {
+        "name" : "finalTotal",
+        "type" : "Integer"
+      } ]
+    }, {
+      "name" : "getFinalTotal",
+      "parameters" : [ ]
+    } ]
+  }, {
+    "name" : "Employee",
+    "package" : "com.projetjee.gc.entity",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "id",
+      "type" : "int"
+    }, {
+      "name" : "firstName",
+      "type" : "String"
+    }, {
+      "name" : "lastName",
+      "type" : "String"
+    }, {
+      "name" : "email",
+      "type" : "String"
+    } ],
+    "methods" : [ {
+      "name" : "getId",
+      "parameters" : [ ]
+    }, {
+      "name" : "setId",
+      "parameters" : [ {
+        "name" : "id",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getFirstName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setFirstName",
+      "parameters" : [ {
+        "name" : "firstName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getLastName",
+      "parameters" : [ ]
+    }, {
+      "name" : "setLastName",
+      "parameters" : [ {
+        "name" : "lastName",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getEmail",
+      "parameters" : [ ]
+    }, {
+      "name" : "setEmail",
+      "parameters" : [ {
+        "name" : "email",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "toString",
+      "parameters" : [ ]
+    } ]
+  }, {
+    "name" : "EmployeeDAOImpl",
+    "package" : "com.projetjee.gc.dao.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "entityManager",
+      "type" : "EntityManager"
+    } ],
+    "methods" : [ {
+      "name" : "findAll",
+      "parameters" : [ ]
+    }, {
+      "name" : "findById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "save",
+      "parameters" : [ {
+        "name" : "theEmployee",
+        "type" : "Employee"
+      } ]
+    }, {
+      "name" : "deleteById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "CustomerDAOImpl",
+    "package" : "com.projetjee.gc.dao.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "entityManager",
+      "type" : "EntityManager"
+    } ],
+    "methods" : [ {
+      "name" : "getCustomers",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveCustomer",
+      "parameters" : [ {
+        "name" : "theCustomer",
+        "type" : "Customer"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ {
+        "name" : "email",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderLineDAOImpl",
+    "package" : "com.projetjee.gc.dao.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "entityManager",
+      "type" : "EntityManager"
+    } ],
+    "methods" : [ {
+      "name" : "getOrderLines",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderLine",
+      "parameters" : [ {
+        "name" : "theOrderLine",
+        "type" : "OrderLine"
+      } ]
+    }, {
+      "name" : "getOrderLineByOrderHeaderID",
+      "parameters" : [ {
+        "name" : "orderHeaderID",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteOrderLine",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderHeaderDAOImpl",
+    "package" : "com.projetjee.gc.dao.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "entityManager",
+      "type" : "EntityManager"
+    } ],
+    "methods" : [ {
+      "name" : "getOrderHeader",
+      "parameters" : [ ]
+    }, {
+      "name" : "getLastOrderHeader",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderHeader",
+      "parameters" : [ {
+        "name" : "orderHeader",
+        "type" : "OrderHeader"
+      } ]
+    }, {
+      "name" : "getOrderHeaderById",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "Integer"
+      } ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ {
+        "name" : "type",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderHeaderByNumber",
+      "parameters" : [ {
+        "name" : "OrderHeaderNumber",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "ProductDAOImpl",
+    "package" : "com.projetjee.gc.dao.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "entityManager",
+      "type" : "EntityManager"
+    } ],
+    "methods" : [ {
+      "name" : "getProducts",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveProduct",
+      "parameters" : [ {
+        "name" : "theProduct",
+        "type" : "Product"
+      } ]
+    }, {
+      "name" : "getProduct",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteProduct",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getProduct",
+      "parameters" : [ {
+        "name" : "name",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderHeaderDAO",
+    "package" : "com.projetjee.gc.dao",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getOrderHeader",
+      "parameters" : [ ]
+    }, {
+      "name" : "getLastOrderHeader",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderHeader",
+      "parameters" : [ {
+        "name" : "theOrderHeader",
+        "type" : "OrderHeader"
+      } ]
+    }, {
+      "name" : "getOrderHeaderByNumber",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderHeaderById",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "Integer"
+      } ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ {
+        "name" : "type",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderLineDAO",
+    "package" : "com.projetjee.gc.dao",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getOrderLines",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderLine",
+      "parameters" : [ {
+        "name" : "theOrderLine",
+        "type" : "OrderLine"
+      } ]
+    }, {
+      "name" : "getOrderLineByOrderHeaderID",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteOrderLine",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "CustomerDAO",
+    "package" : "com.projetjee.gc.dao",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getCustomers",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveCustomer",
+      "parameters" : [ {
+        "name" : "theCustomer",
+        "type" : "Customer"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ {
+        "name" : "email",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "deleteCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "EmployeeDAO",
+    "package" : "com.projetjee.gc.dao",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "findAll",
+      "parameters" : [ ]
+    }, {
+      "name" : "findById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "save",
+      "parameters" : [ {
+        "name" : "theEmployee",
+        "type" : "Employee"
+      } ]
+    }, {
+      "name" : "deleteById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "ProductDAO",
+    "package" : "com.projetjee.gc.dao",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getProducts",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveProduct",
+      "parameters" : [ {
+        "name" : "theProduct",
+        "type" : "Product"
+      } ]
+    }, {
+      "name" : "getProduct",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteProduct",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getProduct",
+      "parameters" : [ {
+        "name" : "name",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "ProductController",
+    "package" : "com.projetjee.gc.controller",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "productService",
+      "type" : "ProductService"
+    } ],
+    "methods" : [ {
+      "name" : "listProducts",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "Integer"
+      }, {
+        "name" : "theModel",
+        "type" : "Model"
+      } ]
+    }, {
+      "name" : "bindProductAttribute",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "Integer"
+      }, {
+        "name" : "theModel",
+        "type" : "Model"
+      } ]
+    }, {
+      "name" : "saveProduct",
+      "parameters" : [ {
+        "name" : "theProduct",
+        "type" : "ProductDTO"
+      } ]
+    }, {
+      "name" : "showFormForUpdate",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      }, {
+        "name" : "redirectAttributes",
+        "type" : "RedirectAttributes"
+      } ]
+    }, {
+      "name" : "deleteProduct",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderController",
+    "package" : "com.projetjee.gc.controller",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "customerService",
+      "type" : "CustomerService"
+    }, {
+      "name" : "productService",
+      "type" : "ProductService"
+    }, {
+      "name" : "orderHeaderService",
+      "type" : "OrderHeaderService"
+    }, {
+      "name" : "orderLineService",
+      "type" : "OrderLineService"
+    } ],
+    "methods" : [ {
+      "name" : "showHome",
+      "parameters" : [ {
+        "name" : "theCustomer",
+        "type" : "CustomerDTO"
+      }, {
+        "name" : "orderHeaderNumber",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "saveOrderHeader",
+      "parameters" : [ {
+        "name" : "oh",
+        "type" : "OrderHeaderDTO"
+      }, {
+        "name" : "result",
+        "type" : "BindingResult"
+      }, {
+        "name" : "model",
+        "type" : "ModelMap"
+      } ]
+    }, {
+      "name" : "deleteOrderLine",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      }, {
+        "name" : "orderNumber",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "checkoutOrder",
+      "parameters" : [ {
+        "name" : "orderNumber",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "CustomerController",
+    "package" : "com.projetjee.gc.controller",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "customerService",
+      "type" : "CustomerService"
+    } ],
+    "methods" : [ {
+      "name" : "listCustomers",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "Integer"
+      }, {
+        "name" : "theModel",
+        "type" : "Model"
+      } ]
+    }, {
+      "name" : "bindCustomerAttribute",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "Integer"
+      }, {
+        "name" : "theModel",
+        "type" : "Model"
+      } ]
+    }, {
+      "name" : "showFormForAdd",
+      "parameters" : [ {
+        "name" : "theModel",
+        "type" : "Model"
+      } ]
+    }, {
+      "name" : "saveCustomer",
+      "parameters" : [ {
+        "name" : "theCustomer",
+        "type" : "CustomerDTO"
+      } ]
+    }, {
+      "name" : "showFormForUpdate",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      }, {
+        "name" : "redirectAttributes",
+        "type" : "RedirectAttributes"
+      } ]
+    }, {
+      "name" : "deleteCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "IndexController",
+    "package" : "com.projetjee.gc.controller",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "orderHeaderService",
+      "type" : "OrderHeaderService"
+    } ],
+    "methods" : [ {
+      "name" : "showHome1",
+      "parameters" : [ ]
+    }, {
+      "name" : "createOrder",
+      "parameters" : [ ]
+    } ]
+  }, {
+    "name" : "GestionCommercielleApplication",
+    "package" : "com.projetjee.gc",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "main",
+      "parameters" : [ {
+        "name" : "args",
+        "type" : "String[]"
+      } ]
+    } ]
+  }, {
+    "name" : "MainApp",
+    "package" : "com.projetjee.gc",
+    "type" : "class",
+    "modifiers" : "public , final , static ",
+    "fields" : [ {
+      "name" : "x",
+      "type" : "int"
+    }, {
+      "name" : "y",
+      "type" : "int"
+    }, {
+      "name" : "z",
+      "type" : "int"
+    }, {
+      "name" : "t",
+      "type" : "int"
+    }, {
+      "name" : "u",
+      "type" : "int"
+    }, {
+      "name" : "v",
+      "type" : "int"
+    }, {
+      "name" : "w",
+      "type" : "int"
+    }, {
+      "name" : "a",
+      "type" : "int"
+    }, {
+      "name" : "b",
+      "type" : "int"
+    }, {
+      "name" : "c",
+      "type" : "int"
+    }, {
+      "name" : "d",
+      "type" : "int"
+    }, {
+      "name" : "e",
+      "type" : "int"
+    }, {
+      "name" : "f",
+      "type" : "int"
+    }, {
+      "name" : "g",
+      "type" : "int"
+    }, {
+      "name" : "h",
+      "type" : "int"
+    }, {
+      "name" : "i",
+      "type" : "int"
+    } ],
+    "methods" : [ {
+      "name" : "main",
+      "parameters" : [ {
+        "name" : "args",
+        "type" : "String[]"
+      } ]
+    }, {
+      "name" : "badSmellMethod",
+      "parameters" : [ {
+        "name" : "x",
+        "type" : "int"
+      }, {
+        "name" : "y",
+        "type" : "int"
+      }, {
+        "name" : "z",
+        "type" : "int"
+      }, {
+        "name" : "t",
+        "type" : "int"
+      }, {
+        "name" : "u",
+        "type" : "int"
+      }, {
+        "name" : "v",
+        "type" : "int"
+      }, {
+        "name" : "w",
+        "type" : "int"
+      }, {
+        "name" : "a",
+        "type" : "int"
+      }, {
+        "name" : "b",
+        "type" : "int"
+      }, {
+        "name" : "c",
+        "type" : "int"
+      }, {
+        "name" : "d",
+        "type" : "int"
+      }, {
+        "name" : "e",
+        "type" : "int"
+      }, {
+        "name" : "f",
+        "type" : "int"
+      }, {
+        "name" : "g",
+        "type" : "int"
+      }, {
+        "name" : "h",
+        "type" : "int"
+      }, {
+        "name" : "i",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderLineServiceImpl",
+    "package" : "com.projetjee.gc.service.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "orderLineDAO",
+      "type" : "OrderLineDAO"
+    }, {
+      "name" : "orderLineMapper",
+      "type" : "OrderLineMapper"
+    } ],
+    "methods" : [ {
+      "name" : "getOrderLines",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderLine",
+      "parameters" : [ {
+        "name" : "theOrderLine",
+        "type" : "OrderLineDTO"
+      } ]
+    }, {
+      "name" : "getOrderLinesbyOrderHeaderID",
+      "parameters" : [ {
+        "name" : "orderHeaderID",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteOrderLine",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderHeaderServiceImpl",
+    "package" : "com.projetjee.gc.service.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "orderHeaderDAO",
+      "type" : "OrderHeaderDAO"
+    }, {
+      "name" : "orderLineDAO",
+      "type" : "OrderLineDAO"
+    }, {
+      "name" : "orderHeaderMapper",
+      "type" : "OrderHeaderMapper"
+    }, {
+      "name" : "orderLineMapper",
+      "type" : "OrderLineMapper"
+    }, {
+      "name" : "customerDAO",
+      "type" : "CustomerDAO"
+    }, {
+      "name" : "productDAO",
+      "type" : "ProductDAO"
+    } ],
+    "methods" : [ {
+      "name" : "getOrderHeaderID",
+      "parameters" : [ ]
+    }, {
+      "name" : "getNextOrderHeaderNumber",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderHeader",
+      "parameters" : [ {
+        "name" : "theOrderHeader",
+        "type" : "OrderHeaderDTO"
+      } ]
+    }, {
+      "name" : "getOrderHeaderById",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "Integer"
+      } ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ {
+        "name" : "type",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderHeaderByNumber",
+      "parameters" : [ {
+        "name" : "orderHeaderNumber",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "checkout",
+      "parameters" : [ {
+        "name" : "orderHeaderNumber",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "EmployeeServiceImpl",
+    "package" : "com.projetjee.gc.service.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "employeeDAO",
+      "type" : "EmployeeDAO"
+    } ],
+    "methods" : [ {
+      "name" : "findAll",
+      "parameters" : [ ]
+    }, {
+      "name" : "findById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "save",
+      "parameters" : [ {
+        "name" : "theEmployee",
+        "type" : "Employee"
+      } ]
+    }, {
+      "name" : "deleteById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "CustomerServiceImpl",
+    "package" : "com.projetjee.gc.service.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "customerDAO",
+      "type" : "CustomerDAO"
+    }, {
+      "name" : "customerMapper",
+      "type" : "CustomerMapper"
+    } ],
+    "methods" : [ {
+      "name" : "getCustomer",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveCustomer",
+      "parameters" : [ {
+        "name" : "theCustomer",
+        "type" : "CustomerDTO"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "ProductServiceImpl",
+    "package" : "com.projetjee.gc.service.impl",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "productDAO",
+      "type" : "ProductDAO"
+    }, {
+      "name" : "productMapper",
+      "type" : "ProductMapper"
+    } ],
+    "methods" : [ {
+      "name" : "getProducts",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveProduct",
+      "parameters" : [ {
+        "name" : "theProduct",
+        "type" : "ProductDTO"
+      } ]
+    }, {
+      "name" : "deleteProduct",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "getProducts",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "ProductService",
+    "package" : "com.projetjee.gc.service",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getProducts",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveProduct",
+      "parameters" : [ {
+        "name" : "theProduct",
+        "type" : "ProductDTO"
+      } ]
+    }, {
+      "name" : "getProducts",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteProduct",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderLineMapper",
+    "package" : "com.projetjee.gc.service.mapper",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "productMapper",
+      "type" : "ProductMapper"
+    } ],
+    "methods" : [ {
+      "name" : "mapToDTO",
+      "parameters" : [ {
+        "name" : "e",
+        "type" : "OrderLine"
+      } ]
+    }, {
+      "name" : "mapToEntity",
+      "parameters" : [ {
+        "name" : "theOrderLine",
+        "type" : "OrderLineDTO"
+      } ]
+    } ]
+  }, {
+    "name" : "Mapper",
+    "package" : "com.projetjee.gc.service.mapper",
+    "type" : "class",
+    "modifiers" : "public , abstract ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "mapToDTO",
+      "parameters" : [ {
+        "name" : "e",
+        "type" : "E"
+      } ]
+    }, {
+      "name" : "mapToEntity",
+      "parameters" : [ {
+        "name" : "d",
+        "type" : "D"
+      } ]
+    } ]
+  }, {
+    "name" : "CustomerMapper",
+    "package" : "com.projetjee.gc.service.mapper",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "mapToDTO",
+      "parameters" : [ {
+        "name" : "c",
+        "type" : "Customer"
+      } ]
+    }, {
+      "name" : "mapToEntity",
+      "parameters" : [ {
+        "name" : "theCustomer",
+        "type" : "CustomerDTO"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderHeaderMapper",
+    "package" : "com.projetjee.gc.service.mapper",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ {
+      "name" : "customerMapper",
+      "type" : "CustomerMapper"
+    }, {
+      "name" : "productMapper",
+      "type" : "ProductMapper"
+    } ],
+    "methods" : [ {
+      "name" : "mapToDTO",
+      "parameters" : [ {
+        "name" : "e",
+        "type" : "OrderHeader"
+      } ]
+    }, {
+      "name" : "mapToEntity",
+      "parameters" : [ {
+        "name" : "theOrderHeader",
+        "type" : "OrderHeaderDTO"
+      } ]
+    } ]
+  }, {
+    "name" : "ProductMapper",
+    "package" : "com.projetjee.gc.service.mapper",
+    "type" : "class",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "mapToDTO",
+      "parameters" : [ {
+        "name" : "e",
+        "type" : "Product"
+      } ]
+    }, {
+      "name" : "mapToEntity",
+      "parameters" : [ {
+        "name" : "theProduct",
+        "type" : "ProductDTO"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderHeaderService",
+    "package" : "com.projetjee.gc.service",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getOrderHeaderID",
+      "parameters" : [ ]
+    }, {
+      "name" : "getNextOrderHeaderNumber",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderHeader",
+      "parameters" : [ {
+        "name" : "theOrderHeader",
+        "type" : "OrderHeaderDTO"
+      } ]
+    }, {
+      "name" : "getOrderHeaderById",
+      "parameters" : [ {
+        "name" : "orderHeaderId",
+        "type" : "Integer"
+      } ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ ]
+    }, {
+      "name" : "getAllOrders",
+      "parameters" : [ {
+        "name" : "type",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "getOrderHeaderByNumber",
+      "parameters" : [ {
+        "name" : "orderHeaderNumber",
+        "type" : "String"
+      } ]
+    }, {
+      "name" : "checkout",
+      "parameters" : [ {
+        "name" : "orderHeaderNumber",
+        "type" : "String"
+      } ]
+    } ]
+  }, {
+    "name" : "OrderLineService",
+    "package" : "com.projetjee.gc.service",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getOrderLines",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveOrderLine",
+      "parameters" : [ {
+        "name" : "theOrderLine",
+        "type" : "OrderLineDTO"
+      } ]
+    }, {
+      "name" : "getOrderLinesbyOrderHeaderID",
+      "parameters" : [ {
+        "name" : "orderHeaderID",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteOrderLine",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "CustomerService",
+    "package" : "com.projetjee.gc.service",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "getCustomer",
+      "parameters" : [ ]
+    }, {
+      "name" : "saveCustomer",
+      "parameters" : [ {
+        "name" : "theCustomer",
+        "type" : "CustomerDTO"
+      } ]
+    }, {
+      "name" : "getCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "deleteCustomer",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+    "name" : "EmployeeService",
+    "package" : "com.projetjee.gc.service",
+    "type" : "interface",
+    "modifiers" : "public ",
+    "fields" : [ ],
+    "methods" : [ {
+      "name" : "findAll",
+      "parameters" : [ ]
+    }, {
+      "name" : "findById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    }, {
+      "name" : "save",
+      "parameters" : [ {
+        "name" : "theEmployee",
+        "type" : "Employee"
+      } ]
+    }, {
+      "name" : "deleteById",
+      "parameters" : [ {
+        "name" : "theId",
+        "type" : "int"
+      } ]
+    } ]
+  } ],
+  "relations" : [ {
+    "source" : "ProductDTO",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDTO",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDTO",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDTO",
+    "target" : "List<OrderHeaderDTO>",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "ProductDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "CustomerDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "OrderLineDTO[]",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "OrderLineDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDTO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLine",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLine",
+    "target" : "Product",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLine",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLine",
+    "target" : "OrderHeader",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLine",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLine",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "Product",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "Product",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "Product",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "Product",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "Product",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "Product",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "Customer",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "Customer",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "Customer",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "Customer",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "Date",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "Customer",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "List<OrderLine>",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeader",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "Employee",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "Employee",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "Employee",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "Employee",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDAOImpl",
+    "target" : "EmployeeDAO",
+    "type" : "implements"
+  }, {
+    "source" : "EmployeeDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDAOImpl",
+    "target" : "Employee",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAOImpl",
+    "target" : "CustomerDAO",
+    "type" : "implements"
+  }, {
+    "source" : "CustomerDAOImpl",
+    "target" : "Customer",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAOImpl",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDAOImpl",
+    "target" : "OrderLineDAO",
+    "type" : "implements"
+  }, {
+    "source" : "OrderLineDAOImpl",
+    "target" : "OrderLine",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAOImpl",
+    "target" : "OrderHeaderDAO",
+    "type" : "implements"
+  }, {
+    "source" : "OrderHeaderDAOImpl",
+    "target" : "OrderHeader",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAOImpl",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAOImpl",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAOImpl",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAOImpl",
+    "target" : "ProductDAO",
+    "type" : "implements"
+  }, {
+    "source" : "ProductDAOImpl",
+    "target" : "Product",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAOImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAOImpl",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAO",
+    "target" : "OrderHeader",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAO",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderDAO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDAO",
+    "target" : "OrderLine",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAO",
+    "target" : "Customer",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDAO",
+    "target" : "Employee",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAO",
+    "target" : "Product",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAO",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductDAO",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "Model",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "Model",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "ProductDTO",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "RedirectAttributes",
+    "type" : "uses"
+  }, {
+    "source" : "ProductController",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "CustomerDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "OrderHeaderDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "BindingResult",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "ModelMap",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderController",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "Model",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "Model",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "Model",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "CustomerDTO",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "RedirectAttributes",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerController",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "GestionCommercielleApplication",
+    "target" : "String[]",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "GestCommercialeApplication",
+    "type" : "extends"
+  }, {
+    "source" : "MainApp",
+    "target" : "String[]",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "MainApp",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineServiceImpl",
+    "target" : "OrderLineService",
+    "type" : "implements"
+  }, {
+    "source" : "OrderLineServiceImpl",
+    "target" : "OrderLineDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderServiceImpl",
+    "target" : "OrderHeaderService",
+    "type" : "implements"
+  }, {
+    "source" : "OrderHeaderServiceImpl",
+    "target" : "OrderHeaderDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderServiceImpl",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderServiceImpl",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderServiceImpl",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderServiceImpl",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeServiceImpl",
+    "target" : "EmployeeService",
+    "type" : "implements"
+  }, {
+    "source" : "EmployeeServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeServiceImpl",
+    "target" : "Employee",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerServiceImpl",
+    "target" : "CustomerService",
+    "type" : "implements"
+  }, {
+    "source" : "CustomerServiceImpl",
+    "target" : "CustomerDTO",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductServiceImpl",
+    "target" : "ProductService",
+    "type" : "implements"
+  }, {
+    "source" : "ProductServiceImpl",
+    "target" : "ProductDTO",
+    "type" : "uses"
+  }, {
+    "source" : "ProductServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductServiceImpl",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductService",
+    "target" : "ProductDTO",
+    "type" : "uses"
+  }, {
+    "source" : "ProductService",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "ProductService",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineMapper",
+    "target" : "Mapper",
+    "type" : "extends"
+  }, {
+    "source" : "OrderLineMapper",
+    "target" : "OrderLine",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineMapper",
+    "target" : "OrderLineDTO",
+    "type" : "uses"
+  }, {
+    "source" : "Mapper",
+    "target" : "E",
+    "type" : "uses"
+  }, {
+    "source" : "Mapper",
+    "target" : "D",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerMapper",
+    "target" : "Mapper",
+    "type" : "extends"
+  }, {
+    "source" : "CustomerMapper",
+    "target" : "Customer",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerMapper",
+    "target" : "CustomerDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderMapper",
+    "target" : "Mapper",
+    "type" : "extends"
+  }, {
+    "source" : "OrderHeaderMapper",
+    "target" : "OrderHeader",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderMapper",
+    "target" : "OrderHeaderDTO",
+    "type" : "uses"
+  }, {
+    "source" : "ProductMapper",
+    "target" : "Mapper",
+    "type" : "extends"
+  }, {
+    "source" : "ProductMapper",
+    "target" : "Product",
+    "type" : "uses"
+  }, {
+    "source" : "ProductMapper",
+    "target" : "ProductDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderService",
+    "target" : "OrderHeaderDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderService",
+    "target" : "Integer",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderService",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderService",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderHeaderService",
+    "target" : "String",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineService",
+    "target" : "OrderLineDTO",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineService",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "OrderLineService",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerService",
+    "target" : "CustomerDTO",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerService",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "CustomerService",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeService",
+    "target" : "int",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeService",
+    "target" : "Employee",
+    "type" : "uses"
+  }, {
+    "source" : "EmployeeService",
+    "target" : "int",
+    "type" : "uses"
+  } ]
+}
