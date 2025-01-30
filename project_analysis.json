@@ -25,58 +25,70 @@
     } ],
     "methods" : [ {
       "name" : "getQty",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setQty",
       "parameters" : [ {
         "name" : "qty",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getProductId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setProductId",
       "parameters" : [ {
         "name" : "productId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setName",
       "parameters" : [ {
         "name" : "name",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getSku",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setSku",
       "parameters" : [ {
         "name" : "sku",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getColor",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setColor",
       "parameters" : [ {
         "name" : "color",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getPrice",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setPrice",
       "parameters" : [ {
         "name" : "price",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "EmployeeDTO",
@@ -98,40 +110,48 @@
     } ],
     "methods" : [ {
       "name" : "getId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setId",
       "parameters" : [ {
         "name" : "id",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFirstName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFirstName",
       "parameters" : [ {
         "name" : "firstName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getLastName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setLastName",
       "parameters" : [ {
         "name" : "lastName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getEmail",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setEmail",
       "parameters" : [ {
         "name" : "email",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "CustomerDTO",
@@ -159,58 +179,70 @@
     } ],
     "methods" : [ {
       "name" : "getId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setId",
       "parameters" : [ {
         "name" : "id",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFirstName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFirstName",
       "parameters" : [ {
         "name" : "firstName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getLastName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setLastName",
       "parameters" : [ {
         "name" : "lastName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getEmail",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setEmail",
       "parameters" : [ {
         "name" : "email",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFullName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFullName",
       "parameters" : [ {
         "name" : "fullName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderHeader",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderHeader",
       "parameters" : [ {
         "name" : "orderHeader",
         "type" : "List<OrderHeaderDTO>"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "OrderLineDTO",
@@ -244,76 +276,92 @@
     } ],
     "methods" : [ {
       "name" : "getProduct",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setProduct",
       "parameters" : [ {
         "name" : "product",
         "type" : "ProductDTO"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderLineId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderLineId",
       "parameters" : [ {
         "name" : "orderLineId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getLineNumber",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setLineNumber",
       "parameters" : [ {
         "name" : "lineNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getQuantity",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setQuantity",
       "parameters" : [ {
         "name" : "orderPackQuantity",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getItemName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setItemName",
       "parameters" : [ {
         "name" : "itemName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getTotal",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setTotal",
       "parameters" : [ {
         "name" : "total",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getPrice",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setPrice",
       "parameters" : [ {
         "name" : "price",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFinalTotal",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFinalTotal",
       "parameters" : [ {
         "name" : "finalTotal",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "OrderHeaderDTO",
@@ -350,85 +398,103 @@
     } ],
     "methods" : [ {
       "name" : "getOrderHeaderId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderHeaderId",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getNumber",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setNumber",
       "parameters" : [ {
         "name" : "number",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getType",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setType",
       "parameters" : [ {
         "name" : "type",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderDate",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderDate",
       "parameters" : [ {
         "name" : "orderDate",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderStatus",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderStatus",
       "parameters" : [ {
         "name" : "orderStatus",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getCustomer",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setCustomer",
       "parameters" : [ {
         "name" : "customer",
         "type" : "CustomerDTO"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderLine",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderLine",
       "parameters" : [ {
         "name" : "orderLine",
         "type" : "OrderLineDTO[]"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getNewOrderLine",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setNewOrderLine",
       "parameters" : [ {
         "name" : "newOrderLine",
         "type" : "OrderLineDTO"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFinalTotal",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFinalTotal",
       "parameters" : [ {
         "name" : "finalTotal",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "OrderLine",
@@ -456,58 +522,70 @@
     } ],
     "methods" : [ {
       "name" : "getOrderLineId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderLineId",
       "parameters" : [ {
         "name" : "orderLineId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getProduct",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setProduct",
       "parameters" : [ {
         "name" : "product",
         "type" : "Product"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getQuantity",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setQuantity",
       "parameters" : [ {
         "name" : "quantity",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderHeader",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderHeader",
       "parameters" : [ {
         "name" : "orderHeader",
         "type" : "OrderHeader"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getTotal",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setTotal",
       "parameters" : [ {
         "name" : "total",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getPrice",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setPrice",
       "parameters" : [ {
         "name" : "price",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "Product",
@@ -535,58 +613,70 @@
     } ],
     "methods" : [ {
       "name" : "getProductId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setProductId",
       "parameters" : [ {
         "name" : "productId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setName",
       "parameters" : [ {
         "name" : "name",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getSku",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setSku",
       "parameters" : [ {
         "name" : "sku",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getColor",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setColor",
       "parameters" : [ {
         "name" : "color",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getPrice",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setPrice",
       "parameters" : [ {
         "name" : "price",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getQty",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setQty",
       "parameters" : [ {
         "name" : "qty",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "Customer",
@@ -611,43 +701,52 @@
     } ],
     "methods" : [ {
       "name" : "getId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setId",
       "parameters" : [ {
         "name" : "id",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFirstName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFirstName",
       "parameters" : [ {
         "name" : "firstName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getLastName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setLastName",
       "parameters" : [ {
         "name" : "lastName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getEmail",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setEmail",
       "parameters" : [ {
         "name" : "email",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "toString",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 4
     } ]
   }, {
     "name" : "OrderHeader",
@@ -681,76 +780,92 @@
     } ],
     "methods" : [ {
       "name" : "getOrderHeaderId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderHeaderId",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getNumber",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setNumber",
       "parameters" : [ {
         "name" : "number",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getType",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setType",
       "parameters" : [ {
         "name" : "type",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderDate",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderDate",
       "parameters" : [ {
         "name" : "orderDate",
         "type" : "Date"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getCustomer",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setCustomer",
       "parameters" : [ {
         "name" : "customer",
         "type" : "Customer"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderLines",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setOrderLines",
       "parameters" : [ {
         "name" : "orderLines",
         "type" : "List<OrderLine>"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getOrderStatus",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 4
     }, {
       "name" : "setOrderStatus",
       "parameters" : [ {
         "name" : "orderStatus",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFinalTotal",
       "parameters" : [ {
         "name" : "finalTotal",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFinalTotal",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "Employee",
@@ -772,43 +887,52 @@
     } ],
     "methods" : [ {
       "name" : "getId",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setId",
       "parameters" : [ {
         "name" : "id",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getFirstName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setFirstName",
       "parameters" : [ {
         "name" : "firstName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getLastName",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setLastName",
       "parameters" : [ {
         "name" : "lastName",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "getEmail",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 3
     }, {
       "name" : "setEmail",
       "parameters" : [ {
         "name" : "email",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 3
     }, {
       "name" : "toString",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 4
     } ]
   }, {
     "name" : "EmployeeDAOImpl",
@@ -821,25 +945,29 @@
     } ],
     "methods" : [ {
       "name" : "findAll",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 16
     }, {
       "name" : "findById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 13
     }, {
       "name" : "save",
       "parameters" : [ {
         "name" : "theEmployee",
         "type" : "Employee"
-      } ]
+      } ],
+      "linesOfCode" : 9
     }, {
       "name" : "deleteById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 14
     } ]
   }, {
     "name" : "CustomerDAOImpl",
@@ -852,31 +980,36 @@
     } ],
     "methods" : [ {
       "name" : "getCustomers",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 18
     }, {
       "name" : "saveCustomer",
       "parameters" : [ {
         "name" : "theCustomer",
         "type" : "Customer"
-      } ]
+      } ],
+      "linesOfCode" : 12
     }, {
       "name" : "getCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 13
     }, {
       "name" : "deleteCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 16
     }, {
       "name" : "getCustomer",
       "parameters" : [ {
         "name" : "email",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 14
     } ]
   }, {
     "name" : "OrderLineDAOImpl",
@@ -889,25 +1022,29 @@
     } ],
     "methods" : [ {
       "name" : "getOrderLines",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 15
     }, {
       "name" : "saveOrderLine",
       "parameters" : [ {
         "name" : "theOrderLine",
         "type" : "OrderLine"
-      } ]
+      } ],
+      "linesOfCode" : 10
     }, {
       "name" : "getOrderLineByOrderHeaderID",
       "parameters" : [ {
         "name" : "orderHeaderID",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 11
     }, {
       "name" : "deleteOrderLine",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 14
     } ]
   }, {
     "name" : "OrderHeaderDAOImpl",
@@ -920,37 +1057,44 @@
     } ],
     "methods" : [ {
       "name" : "getOrderHeader",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 18
     }, {
       "name" : "getLastOrderHeader",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 18
     }, {
       "name" : "saveOrderHeader",
       "parameters" : [ {
         "name" : "orderHeader",
         "type" : "OrderHeader"
-      } ]
+      } ],
+      "linesOfCode" : 7
     }, {
       "name" : "getOrderHeaderById",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 8
     }, {
       "name" : "getAllOrders",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 8
     }, {
       "name" : "getAllOrders",
       "parameters" : [ {
         "name" : "type",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 9
     }, {
       "name" : "getOrderHeaderByNumber",
       "parameters" : [ {
         "name" : "OrderHeaderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 13
     } ]
   }, {
     "name" : "ProductDAOImpl",
@@ -963,31 +1107,36 @@
     } ],
     "methods" : [ {
       "name" : "getProducts",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 15
     }, {
       "name" : "saveProduct",
       "parameters" : [ {
         "name" : "theProduct",
         "type" : "Product"
-      } ]
+      } ],
+      "linesOfCode" : 10
     }, {
       "name" : "getProduct",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 11
     }, {
       "name" : "deleteProduct",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 14
     }, {
       "name" : "getProduct",
       "parameters" : [ {
         "name" : "name",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 13
     } ]
   }, {
     "name" : "OrderHeaderDAO",
@@ -997,37 +1146,44 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getOrderHeader",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "getLastOrderHeader",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveOrderHeader",
       "parameters" : [ {
         "name" : "theOrderHeader",
         "type" : "OrderHeader"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getOrderHeaderByNumber",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getOrderHeaderById",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getAllOrders",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "getAllOrders",
       "parameters" : [ {
         "name" : "type",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "OrderLineDAO",
@@ -1037,25 +1193,29 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getOrderLines",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveOrderLine",
       "parameters" : [ {
         "name" : "theOrderLine",
         "type" : "OrderLine"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getOrderLineByOrderHeaderID",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteOrderLine",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "CustomerDAO",
@@ -1065,31 +1225,36 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getCustomers",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveCustomer",
       "parameters" : [ {
         "name" : "theCustomer",
         "type" : "Customer"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getCustomer",
       "parameters" : [ {
         "name" : "email",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "EmployeeDAO",
@@ -1099,25 +1264,29 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "findAll",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "findById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "save",
       "parameters" : [ {
         "name" : "theEmployee",
         "type" : "Employee"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "ProductDAO",
@@ -1127,31 +1296,36 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getProducts",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveProduct",
       "parameters" : [ {
         "name" : "theProduct",
         "type" : "Product"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getProduct",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteProduct",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getProduct",
       "parameters" : [ {
         "name" : "name",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "ProductController",
@@ -1170,7 +1344,8 @@
       }, {
         "name" : "theModel",
         "type" : "Model"
-      } ]
+      } ],
+      "linesOfCode" : 13
     }, {
       "name" : "bindProductAttribute",
       "parameters" : [ {
@@ -1179,13 +1354,15 @@
       }, {
         "name" : "theModel",
         "type" : "Model"
-      } ]
+      } ],
+      "linesOfCode" : 12
     }, {
       "name" : "saveProduct",
       "parameters" : [ {
         "name" : "theProduct",
         "type" : "ProductDTO"
-      } ]
+      } ],
+      "linesOfCode" : 8
     }, {
       "name" : "showFormForUpdate",
       "parameters" : [ {
@@ -1194,13 +1371,15 @@
       }, {
         "name" : "redirectAttributes",
         "type" : "RedirectAttributes"
-      } ]
+      } ],
+      "linesOfCode" : 8
     }, {
       "name" : "deleteProduct",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 8
     } ]
   }, {
     "name" : "OrderController",
@@ -1228,7 +1407,8 @@
       }, {
         "name" : "orderHeaderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 50
     }, {
       "name" : "saveOrderHeader",
       "parameters" : [ {
@@ -1240,7 +1420,8 @@
       }, {
         "name" : "model",
         "type" : "ModelMap"
-      } ]
+      } ],
+      "linesOfCode" : 8
     }, {
       "name" : "deleteOrderLine",
       "parameters" : [ {
@@ -1249,13 +1430,15 @@
       }, {
         "name" : "orderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 9
     }, {
       "name" : "checkoutOrder",
       "parameters" : [ {
         "name" : "orderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 11
     } ]
   }, {
     "name" : "CustomerController",
@@ -1274,7 +1457,8 @@
       }, {
         "name" : "theModel",
         "type" : "Model"
-      } ]
+      } ],
+      "linesOfCode" : 11
     }, {
       "name" : "bindCustomerAttribute",
       "parameters" : [ {
@@ -1283,19 +1467,22 @@
       }, {
         "name" : "theModel",
         "type" : "Model"
-      } ]
+      } ],
+      "linesOfCode" : 12
     }, {
       "name" : "showFormForAdd",
       "parameters" : [ {
         "name" : "theModel",
         "type" : "Model"
-      } ]
+      } ],
+      "linesOfCode" : 9
     }, {
       "name" : "saveCustomer",
       "parameters" : [ {
         "name" : "theCustomer",
         "type" : "CustomerDTO"
-      } ]
+      } ],
+      "linesOfCode" : 8
     }, {
       "name" : "showFormForUpdate",
       "parameters" : [ {
@@ -1304,13 +1491,15 @@
       }, {
         "name" : "redirectAttributes",
         "type" : "RedirectAttributes"
-      } ]
+      } ],
+      "linesOfCode" : 8
     }, {
       "name" : "deleteCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 8
     } ]
   }, {
     "name" : "IndexController",
@@ -1323,10 +1512,12 @@
     } ],
     "methods" : [ {
       "name" : "showHome1",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 18
     }, {
       "name" : "createOrder",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 7
     } ]
   }, {
     "name" : "GestionCommercielleApplication",
@@ -1339,7 +1530,8 @@
       "parameters" : [ {
         "name" : "args",
         "type" : "String[]"
-      } ]
+      } ],
+      "linesOfCode" : 3
     } ]
   }, {
     "name" : "MainApp",
@@ -1400,7 +1592,8 @@
       "parameters" : [ {
         "name" : "args",
         "type" : "String[]"
-      } ]
+      } ],
+      "linesOfCode" : 4
     }, {
       "name" : "badSmellMethod",
       "parameters" : [ {
@@ -1451,7 +1644,8 @@
       }, {
         "name" : "i",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 86
     } ]
   }, {
     "name" : "OrderLineServiceImpl",
@@ -1467,25 +1661,29 @@
     } ],
     "methods" : [ {
       "name" : "getOrderLines",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 12
     }, {
       "name" : "saveOrderLine",
       "parameters" : [ {
         "name" : "theOrderLine",
         "type" : "OrderLineDTO"
-      } ]
+      } ],
+      "linesOfCode" : 5
     }, {
       "name" : "getOrderLinesbyOrderHeaderID",
       "parameters" : [ {
         "name" : "orderHeaderID",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 13
     }, {
       "name" : "deleteOrderLine",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 4
     } ]
   }, {
     "name" : "OrderHeaderServiceImpl",
@@ -1513,43 +1711,51 @@
     } ],
     "methods" : [ {
       "name" : "getOrderHeaderID",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 9
     }, {
       "name" : "getNextOrderHeaderNumber",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 10
     }, {
       "name" : "saveOrderHeader",
       "parameters" : [ {
         "name" : "theOrderHeader",
         "type" : "OrderHeaderDTO"
-      } ]
+      } ],
+      "linesOfCode" : 28
     }, {
       "name" : "getOrderHeaderById",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 8
     }, {
       "name" : "getAllOrders",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 13
     }, {
       "name" : "getAllOrders",
       "parameters" : [ {
         "name" : "type",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 12
     }, {
       "name" : "getOrderHeaderByNumber",
       "parameters" : [ {
         "name" : "orderHeaderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 7
     }, {
       "name" : "checkout",
       "parameters" : [ {
         "name" : "orderHeaderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 12
     } ]
   }, {
     "name" : "EmployeeServiceImpl",
@@ -1562,25 +1768,29 @@
     } ],
     "methods" : [ {
       "name" : "findAll",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 5
     }, {
       "name" : "findById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 5
     }, {
       "name" : "save",
       "parameters" : [ {
         "name" : "theEmployee",
         "type" : "Employee"
-      } ]
+      } ],
+      "linesOfCode" : 5
     }, {
       "name" : "deleteById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 5
     } ]
   }, {
     "name" : "CustomerServiceImpl",
@@ -1596,25 +1806,29 @@
     } ],
     "methods" : [ {
       "name" : "getCustomer",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 10
     }, {
       "name" : "saveCustomer",
       "parameters" : [ {
         "name" : "theCustomer",
         "type" : "CustomerDTO"
-      } ]
+      } ],
+      "linesOfCode" : 5
     }, {
       "name" : "getCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 7
     }, {
       "name" : "deleteCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 5
     } ]
   }, {
     "name" : "ProductServiceImpl",
@@ -1630,25 +1844,29 @@
     } ],
     "methods" : [ {
       "name" : "getProducts",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 11
     }, {
       "name" : "saveProduct",
       "parameters" : [ {
         "name" : "theProduct",
         "type" : "ProductDTO"
-      } ]
+      } ],
+      "linesOfCode" : 6
     }, {
       "name" : "deleteProduct",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 7
     }, {
       "name" : "getProducts",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 5
     } ]
   }, {
     "name" : "ProductService",
@@ -1658,25 +1876,29 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getProducts",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveProduct",
       "parameters" : [ {
         "name" : "theProduct",
         "type" : "ProductDTO"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getProducts",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteProduct",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "OrderLineMapper",
@@ -1692,13 +1914,15 @@
       "parameters" : [ {
         "name" : "e",
         "type" : "OrderLine"
-      } ]
+      } ],
+      "linesOfCode" : 12
     }, {
       "name" : "mapToEntity",
       "parameters" : [ {
         "name" : "theOrderLine",
         "type" : "OrderLineDTO"
-      } ]
+      } ],
+      "linesOfCode" : 10
     } ]
   }, {
     "name" : "Mapper",
@@ -1711,13 +1935,15 @@
       "parameters" : [ {
         "name" : "e",
         "type" : "E"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "mapToEntity",
       "parameters" : [ {
         "name" : "d",
         "type" : "D"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "CustomerMapper",
@@ -1730,13 +1956,15 @@
       "parameters" : [ {
         "name" : "c",
         "type" : "Customer"
-      } ]
+      } ],
+      "linesOfCode" : 10
     }, {
       "name" : "mapToEntity",
       "parameters" : [ {
         "name" : "theCustomer",
         "type" : "CustomerDTO"
-      } ]
+      } ],
+      "linesOfCode" : 9
     } ]
   }, {
     "name" : "OrderHeaderMapper",
@@ -1755,13 +1983,15 @@
       "parameters" : [ {
         "name" : "e",
         "type" : "OrderHeader"
-      } ]
+      } ],
+      "linesOfCode" : 16
     }, {
       "name" : "mapToEntity",
       "parameters" : [ {
         "name" : "theOrderHeader",
         "type" : "OrderHeaderDTO"
-      } ]
+      } ],
+      "linesOfCode" : 19
     } ]
   }, {
     "name" : "ProductMapper",
@@ -1774,13 +2004,15 @@
       "parameters" : [ {
         "name" : "e",
         "type" : "Product"
-      } ]
+      } ],
+      "linesOfCode" : 13
     }, {
       "name" : "mapToEntity",
       "parameters" : [ {
         "name" : "theProduct",
         "type" : "ProductDTO"
-      } ]
+      } ],
+      "linesOfCode" : 20
     } ]
   }, {
     "name" : "OrderHeaderService",
@@ -1790,43 +2022,51 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getOrderHeaderID",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "getNextOrderHeaderNumber",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveOrderHeader",
       "parameters" : [ {
         "name" : "theOrderHeader",
         "type" : "OrderHeaderDTO"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getOrderHeaderById",
       "parameters" : [ {
         "name" : "orderHeaderId",
         "type" : "Integer"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getAllOrders",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "getAllOrders",
       "parameters" : [ {
         "name" : "type",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getOrderHeaderByNumber",
       "parameters" : [ {
         "name" : "orderHeaderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "checkout",
       "parameters" : [ {
         "name" : "orderHeaderNumber",
         "type" : "String"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "OrderLineService",
@@ -1836,25 +2076,29 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getOrderLines",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveOrderLine",
       "parameters" : [ {
         "name" : "theOrderLine",
         "type" : "OrderLineDTO"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getOrderLinesbyOrderHeaderID",
       "parameters" : [ {
         "name" : "orderHeaderID",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteOrderLine",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "CustomerService",
@@ -1864,25 +2108,29 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "getCustomer",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "saveCustomer",
       "parameters" : [ {
         "name" : "theCustomer",
         "type" : "CustomerDTO"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "getCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteCustomer",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   }, {
     "name" : "EmployeeService",
@@ -1892,25 +2140,29 @@
     "fields" : [ ],
     "methods" : [ {
       "name" : "findAll",
-      "parameters" : [ ]
+      "parameters" : [ ],
+      "linesOfCode" : 1
     }, {
       "name" : "findById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "save",
       "parameters" : [ {
         "name" : "theEmployee",
         "type" : "Employee"
-      } ]
+      } ],
+      "linesOfCode" : 1
     }, {
       "name" : "deleteById",
       "parameters" : [ {
         "name" : "theId",
         "type" : "int"
-      } ]
+      } ],
+      "linesOfCode" : 1
     } ]
   } ],
   "relations" : [ {

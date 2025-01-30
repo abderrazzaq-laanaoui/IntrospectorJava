@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.ast.body.TypeDeclaration;
+import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.nodeTypes.NodeWithName;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -71,6 +71,11 @@ public class Introspector {
                         paramsArray.add(paramNode);
                     });
                     methodNode.set("parameters", paramsArray);
+
+                    // Calculate lines of code
+                    int linesOfCode = calculateLinesOfCode(method);
+                    methodNode.put("linesOfCode", linesOfCode);
+
                     methodsArray.add(methodNode);
                 });
                 classNode.set("methods", methodsArray);
@@ -94,15 +99,13 @@ public class Introspector {
                     relationsArray.add(relationNode);
                 });
 
-                clazz.getMethods().forEach(method -> {
-                    method.getParameters().forEach(param -> {
-                        ObjectNode relationNode = mapper.createObjectNode();
-                        relationNode.put("source", clazz.getNameAsString());
-                        relationNode.put("target", param.getTypeAsString());
-                        relationNode.put("type", "uses");
-                        relationsArray.add(relationNode);
-                    });
-                });
+                clazz.getMethods().forEach(method -> method.getParameters().forEach(param -> {
+                    ObjectNode relationNode = mapper.createObjectNode();
+                    relationNode.put("source", clazz.getNameAsString());
+                    relationNode.put("target", param.getTypeAsString());
+                    relationNode.put("type", "uses");
+                    relationsArray.add(relationNode);
+                }));
             });
         }
 
@@ -110,6 +113,10 @@ public class Introspector {
         root.set("classes", classesArray);
         root.set("relations", relationsArray);
         mapper.writerWithDefaultPrettyPrinter().writeValue(new File("project_analysis.json"), root);
+    }
+
+    private static int calculateLinesOfCode(MethodDeclaration method) {
+        return method.getEnd().map(end -> end.line).orElse(0) - method.getBegin().map(begin -> begin.line).orElse(0) + 1;
     }
 
     private static List<CompilationUnit> parseJavaFiles(String projectPath) {
